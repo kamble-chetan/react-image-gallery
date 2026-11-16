@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 const App = () => {
   const [photos, setPhotos] = useState([]);
   const [page, setPage] = useState(1);
+  const [selected, setSelected] = useState(null);
   useEffect(() => {
     const fetchImages = async () => {
       let response = await axios.get(
@@ -26,6 +27,7 @@ const App = () => {
             <img
               src={photo.urls.small}
               alt={photo.alt_description}
+              onClick={()=>{setSelected(photos)}}
               className="w-full h-48 object-cover"
             />
             <p className="text-sm text-gray-600 p-2">{photo.user.name}</p>
@@ -55,6 +57,18 @@ const App = () => {
           Next
         </button>
       </div>
+
+      {selected && (
+        <div onClick={()=>{setSelected(null)}}
+        className="fixed inset-0 bg-black/70 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg p-3 max-w-md"
+          onClick={(e)=>{e.stopPropagation}}>
+            <img src={selected.urls.small} alt={selected.alt_description || "Selected photograph"}
+            className="w-full rounded" />
+            <p className="font-bold text-black mt-2">{selected.user.name}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
