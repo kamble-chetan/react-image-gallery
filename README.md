@@ -92,7 +92,7 @@ image-gallery/
 │   └── ...
 ├── .env.example
 ├── .gitignore
-├── package.json
+├── Package.json
 ├── package-lock.json
 └── README.md
 ```
