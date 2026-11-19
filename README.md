@@ -1,14 +1,29 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 # React Image Gallery
 
 A responsive image gallery built with **React** and the **Unsplash API**. Browse photos, search for images using keywords, navigate through pages, and view photos in a larger preview.
 
+## Screenshots
+
+### 1. Main Gallery
+
+![Main Gallery](./screenshots/main-gallery.png)
+
+### 2. Search Results
+
+![Search Results](./screenshots/search-results.png)
+
+### 3. Pagination
+
+![Pagination](./screenshots/pagination.png)
+
+### 4. Selected Image Preview
+
+![Image Modal](./screenshots/image-modal.png)
+
 ## Features
 
 - Browse photos from Unsplash.
-- Search photos by keyword.
+- Search photos using keywords.
 - Paginate through photo results.
 - View larger images using a photo preview modal.
 - Clear search and return to the normal gallery.
@@ -66,6 +81,11 @@ Open the local URL displayed in your terminal.
 ```text
 image-gallery/
 ├── public/
+├── screenshots/
+│   ├── main-gallery.png
+│   ├── search-results.png
+│   ├── pagination.png
+│   └── image-modal.png
 ├── src/
 │   ├── App.jsx
 │   ├── main.jsx
@@ -91,18 +111,8 @@ Photos are provided through the [Unsplash API](https://unsplash.com/developers).
 
 ## Author
 
-**Chetan**
+**Chetan Kamble**
 
 [GitHub Profile](https://github.com/kamble-chetan)
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⭐ Thanks for visiting my project!
