@@ -35,8 +35,13 @@ const App = () => {
           setSearchResults(null);
         }
       } catch (error) {
-        console.error("Error fetching images:", error);
-      }
+  console.error("HTTP Status:", error.response?.status);
+  console.error("Unsplash Error:", error.response?.data);
+  console.error(
+    "Requests Remaining:",
+    error.response?.headers?.["x-ratelimit-remaining"]
+  );
+}
     };
     fetchImages();
   }, [page, Issearching, search]);
