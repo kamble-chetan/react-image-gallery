@@ -14,7 +14,7 @@ A responsive image gallery built with **React** and the **Unsplash API**. Browse
 
 ### 3. Pagination
 
-![Pagination](./screenshots/pagination.png)
+![Pagination](./screenshots/Pagination.png)
 
 ### 4. Selected Image Preview
 
